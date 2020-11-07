@@ -17,11 +17,11 @@ from functools import reduce
 my_dict = defaultdict(list)
 print(my_dict)
 
-a = list("A2")
+a = list(input("Введите первое число в шестнадцатеричной СС: ").upper())
 for i in range(len(a)):
     my_dict[1].append(a[i])
 
-b = list("C4F")
+b = list(input("Введите второе число в шестнадцатеричной СС: ").upper())
 for i in range(len(b)):
     my_dict[2].append(b[i])
 
@@ -40,6 +40,9 @@ for i in range(len(my_mul)):
     my_dict["mul"].append(my_mul[i])
 
 print(my_dict)
+
+"""Знаю, что можно сделать более элегантно, но к сожалению до разбора заданя на уроке не успеваю это сделать..
+"""
 
 # print(f"Сумма чисел {my_dict[1]} и {my_dict[2]} равна {my_sum}")
 # print(f"Произведение чисел {my_dict[1]} и {my_dict[2]} равна {my_mul}")
